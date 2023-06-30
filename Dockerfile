@@ -1,6 +1,6 @@
 FROM eclipse-temurin:11-jre
 WORKDIR /application
-COPY build/libs/halo-1.6.0.jar /application/app.jar
+COPY build/libs/*.jar /application/app.jar
 # JVM_XMS and JVM_XMX configs deprecated for removal in halov1.4.4
 ENV JVM_XMS="256m" \
     JVM_XMX="256m" \
